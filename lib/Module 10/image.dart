@@ -13,9 +13,11 @@ class Account extends StatelessWidget {
         centerTitle: true,
         title: Text('Customers EntryPoint',
           style: TextStyle(
-            fontSize: 40,
-            fontWeight: FontWeight.bold,
-            backgroundColor: Colors.indigoAccent,
+
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.indigoAccent
+
           ),
         ),
       ),
