@@ -11,8 +11,7 @@ class Account extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
-          'Page Logo',
+        title: Text('Customers EntryPoint',
           style: TextStyle(
             fontSize: 40,
             fontWeight: FontWeight.bold,
