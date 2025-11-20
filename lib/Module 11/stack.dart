@@ -31,7 +31,11 @@ class ImageStack extends StatelessWidget {
                 left: 5,
                 bottom: 5,
                 right: 5,
-                child: Container(height: 120, width: 80, color: Colors.blue),
+                child: Container(
+                    height: 180,
+                    width: 120,
+                    color: Colors.blue
+                ),
               ),
               Positioned(
                 child: Container(height: 120, width: 80, color: Colors.blue),
