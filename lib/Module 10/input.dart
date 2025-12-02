@@ -52,6 +52,7 @@ class AppInput extends StatelessWidget {
                 prefixIcon: Icon(Icons.face),
 
                 suffixIcon: Icon(Icons.check),
+
                 border: OutlineInputBorder(
                   borderSide: BorderSide(
                     color: Colors.blueGrey,
