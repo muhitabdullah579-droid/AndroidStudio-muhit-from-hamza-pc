@@ -48,6 +48,7 @@ class AppInput extends StatelessWidget {
                 ),
 
                 labelText: 'Customers Name',
+
                 prefixIcon: Icon(Icons.face),
 
                 suffixIcon: Icon(Icons.check),
