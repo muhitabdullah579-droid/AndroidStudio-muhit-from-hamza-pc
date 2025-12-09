@@ -24,31 +24,29 @@ class ImageStack extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Stack(
-              children: [
-                Positioned(
-                  // top: 5,
-                  // left: 5,
-                  // bottom: 5,
-                  // right: 5,
-                  child: Container(height: 180, width: 120, color: Colors.blue),
-                ),
-                Positioned(
-                  left: 10,
-                  right: 25,
-                  top: 5,
-                  bottom: 5,
-                  child: Container(height: 50, width: 50, color: Colors.orange),
-                ),
-              ],
-            ),
+            // Stack(
+            //   children: [
+            //     Positioned(
+            //       // top: 5,
+            //       // left: 5,
+            //       // bottom: 5,
+            //       // right: 5,
+            //       child: Container(height: 180, width: 120, color: Colors.blue),
+            //     ),
+            //     Positioned(
+            //       left: 10,
+            //       right: 25,
+            //       top: 5,
+            //       bottom: 5,
+            //       child: Container(height: 50, width: 50, color: Colors.orange),
+            //     ),
+            //   ],
+            // ),
             Stack(
               children: [
                 CircleAvatar(
                   radius: 50,
-                  backgroundImage: NetworkImage(
-                    'https://www.canva.com/ai-image-generator?prompt=High%20quality%20stock%20photo%20of%20nature%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner',
-                  ),
+                  backgroundImage:NetworkImage('https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym13fGVufDB8fDB8fHww')
                 ),
                 Positioned(
                   // top: 5,

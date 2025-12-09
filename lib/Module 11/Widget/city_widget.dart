@@ -25,11 +25,12 @@ class CityWidget extends StatelessWidget {
             Text(title,
               style: TextStyle(
                   fontSize: 15,
-                  color: Colors.white
+                  color: Colors.red
               ),
 
             )
         ),
+        ElevatedButton(onPressed: (){}, child: Text(rating,style: TextStyle(color: Colors.orange),))
       ],
     );
   }
