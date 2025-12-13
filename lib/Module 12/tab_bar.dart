@@ -3,7 +3,7 @@ import 'package:muhit_flutter/Module%2010/input.dart';
 import 'package:muhit_flutter/Module 11/list.dart';
 import '../Module 11/gridview_and_navigation.dart';
 import '../Module 11/stack_and_navigation.dart';
-import 'Travel_View/Travel_view_Screan.dart';
+import 'Travel_View/TravelHomeScreen.dart';
 
 class Tab_of_Appbar extends StatelessWidget {
   const Tab_of_Appbar({super.key});
@@ -28,11 +28,11 @@ class Tab_of_Appbar extends StatelessWidget {
           bottom: TabBar(
             isScrollable: true,
             indicatorColor: Colors.lime,
-            indicatorWeight: 4,
-            indicatorPadding: EdgeInsets.all(5),
+            indicatorWeight: 10,
+
             indicator: BoxDecoration(
               color: Colors.orangeAccent,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(15),
             ),
             labelStyle: TextStyle(
               fontSize: 20
@@ -116,10 +116,12 @@ class Tab_of_Appbar extends StatelessWidget {
               //   ),
               //
               // )
-              TravelHomeScreen(),
+
+              ImageStack(),
               Gridview(),
               AppInput(),
-              ImageStack(),
+              TravelHomeScreen(),
+
 
             ]
         ),
@@ -131,7 +133,8 @@ class Tab_of_Appbar extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 25,
-                      backgroundImage: NetworkImage('https://www.canva.com/ai-image-generator?prompt=High%20quality%20stock%20photo%20of%20nature%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner'),
+                    backgroundImage:NetworkImage('https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym13fGVufDB8fDB8fHww')
+
                     ),
                     SizedBox(height: 10,),
                     Text('A.A.Muhit'),
@@ -164,7 +167,7 @@ class Tab_of_Appbar extends StatelessWidget {
                 visualDensity: VisualDensity(horizontal:0,vertical: -2),
                 title: Text('Live Exam'),
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>List()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ClassList()));
                 },
               ),//list title of live exam
               Divider(),

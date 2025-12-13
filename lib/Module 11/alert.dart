@@ -5,6 +5,7 @@ class Alert extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     showAlertDialog() {
       showDialog(
         context: context,

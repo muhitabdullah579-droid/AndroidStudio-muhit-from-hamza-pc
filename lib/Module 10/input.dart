@@ -109,7 +109,7 @@ class AppInput extends StatelessWidget {
                   ),
 
                   labelText: 'Enter Number',
-                  prefixIcon: Icon(Icons.face),
+                  prefixIcon: Icon(Icons.phone),
                   suffixIcon: Icon(Icons.check),
                   border: OutlineInputBorder(
                     borderSide: BorderSide(

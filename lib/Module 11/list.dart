@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class List extends StatelessWidget {
-  const List({super.key});
+class ClassList extends StatelessWidget {
+  const ClassList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Phone number',
+        title: Text('Live Class',
           style: TextStyle(
 
               fontSize: 40,
@@ -54,10 +54,10 @@ class List extends StatelessWidget {
           itemBuilder:(context,index){
             return  Card(
                      child:  ListTile(
-                       title: Text('Muhit'),
-                       subtitle: Text('034747537'),
-                       leading: Icon(Icons.phone),
-                       trailing: Icon(Icons.delete,color: Colors.red),
+                       title: Text('Live Exam'),
+                       subtitle: Text('Time : 10-12'),
+                       leading: Icon(Icons.quiz_outlined),
+                       trailing: Icon(Icons.access_time_filled,color: Colors.red),
 
                      ),
                    );

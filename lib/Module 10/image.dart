@@ -6,12 +6,13 @@ class Account extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextEditingController namecontroller = TextEditingController();
+    TextEditingController phonecontroller = TextEditingController();
     TextEditingController passwordcontroller = TextEditingController();
     final _formkey = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Customers EntryPoint',
+        title: Text('MY Account',
           style: TextStyle(
 
               fontSize: 40,
@@ -26,7 +27,26 @@ class Account extends StatelessWidget {
 
       body: Column(
         children: [
-          Image.asset('assets/images/OIP.webp'),
+          CircleAvatar(
+            child: Image.asset('assets/WhatsApp Image 2025-12-09 at 23.09.40_49d6adf1.jpg',
+            width: 80,
+            height: 80,),
+          ),
+          Positioned(
+            // top: 5,
+            // left: 5,
+            bottom: 5,
+            right: 5,
+            child: Container(
+              height: 40,
+              width: 20,
+              decoration: BoxDecoration(
+                color: Colors.tealAccent,
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white, width: 3),
+              ),
+            ),
+          ),
           Text('Create your account'),
 
           SizedBox(height: 10),
@@ -49,7 +69,7 @@ class Account extends StatelessWidget {
                       //  color: Colors.lightBlue,
                       //    fontSize: 8
                       // ),
-                      labelText: 'Customers Name',
+                      labelText: 'Users Name',
                       prefixIcon: Icon(Icons.face),
                       suffixIcon: Icon(Icons.check),
                       border: OutlineInputBorder(
@@ -60,17 +80,45 @@ class Account extends StatelessWidget {
                       filled: true,
                       fillColor: Colors.blueGrey.shade50,
                     ),
+                  ), //TextFormField of name
+
+                  SizedBox(height: 20,),
+
+                  TextFormField(
+                    controller: phonecontroller,
+                    //maxLength: 30,
+
+                    decoration: InputDecoration(
+                      hintText: 'Enter your number',
+                      hintStyle: TextStyle(color: Colors.red, fontSize: 15),
+
+                      // helperText: 'Enter your full name',
+                      // helperStyle: TextStyle(
+                      //  color: Colors.lightBlue,
+                      //    fontSize: 8
+                      // ),
+                      labelText: 'Users Number',
+                      prefixIcon: Icon(Icons.phone),
+                      suffixIcon: Icon(Icons.check),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+
+                      ),
+
+                      filled: true,
+                      fillColor: Colors.blueGrey.shade50,
+                    ),
 
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Pls enter your name';
-                      } else if (value.length != 8) {
-                        return 'Pls enter your original name';
+                      } else if (value.length != 11) {
+                        return 'Pls enter your Bangladeshi name';
                       } else {
                         return null;
                       }
                     },
-                  ), //TextFormField
+                  ),//TextFormField of number
 
 
                   SizedBox(height: 15,),
@@ -109,7 +157,7 @@ class Account extends StatelessWidget {
                        return null;
                       }
                     },
-                  ),
+                  ),//TextFormField of password
 
                   SizedBox(height: 15,),
 

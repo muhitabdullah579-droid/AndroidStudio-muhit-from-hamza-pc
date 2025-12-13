@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Widget/city_widget.dart';
+import 'Widget/page_view.dart';
 
 class ImageStack extends StatelessWidget {
   const ImageStack({super.key});
@@ -100,12 +101,25 @@ class ImageStack extends StatelessWidget {
                         title: 'Bangladesh',
                         rating: '5.0',
                       ),
-
-                  
                     ],
                   ),
                 ),
 
+                SizedBox(width: 5),
+
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Center(
+                      child: ElevatedButton(onPressed: (){
+                        Navigator.pushNamed(context, '/account');
+
+                        // Navigator.push(context, MaterialPageRoute(builder: (context)=>Test()));
+                        }, child: Text('Next Page')),
+                    ),
+                  ],
+                ),
 
               ],
             ),
