@@ -3,7 +3,9 @@ import 'package:muhit_flutter/Module%2010/input.dart';
 import 'package:muhit_flutter/Module 11/list.dart';
 import '../Module 11/gridview_and_navigation.dart';
 import '../Module 11/stack_and_navigation.dart';
+import '../Module 14/usecase_of_list.dart';
 import 'Travel_View/TravelHomeScreen.dart';
+import 'Travel_View/travelhomescreen2.dart';
 
 class Tab_of_Appbar extends StatelessWidget {
   const Tab_of_Appbar({super.key});
@@ -15,7 +17,7 @@ class Tab_of_Appbar extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Udvash',
+          title: Text('Muhit Travel Agency',
             style: TextStyle(
 
                 fontSize: 40,
@@ -47,20 +49,22 @@ class Tab_of_Appbar extends StatelessWidget {
               text: ('Home'),
             ),
             Tab(
-              icon: Icon(Icons.download),
-              text: ('Downloads'),
+              icon: Icon(Icons.list),
+              text: ('Product List'),
 
+            ),
+            Tab(
+                icon: Icon(Icons.login_sharp),
+                text: ('Log In'),
             ),
             Tab(
               icon: Icon(Icons.settings),
               text: ('Settings'),
 
             ),
-            Tab(
-              icon: Icon(Icons.menu),
-              text: ('Menu'),
 
-            )
+
+
 
 
 
@@ -116,11 +120,11 @@ class Tab_of_Appbar extends StatelessWidget {
               //   ),
               //
               // )
-
-              ImageStack(),
-              Gridview(),
+              TravelHomeScreen2(),
+              Haque_product_list(),
               AppInput(),
-              TravelHomeScreen(),
+              ImageStack(),
+
 
 
             ]
@@ -151,9 +155,17 @@ class Tab_of_Appbar extends StatelessWidget {
                 visualDensity: VisualDensity(horizontal:0,vertical: -2),
                 title: Text('Home'),
                   onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ImageStack()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>TravelHomeScreen2()));
                   },
               ),//list title of home
+              Divider(),
+              ListTile(
+                visualDensity: VisualDensity(horizontal:0,vertical: -2),
+                title: Text('Add Product'),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Haque_product_list()));
+                },
+              ),//list title of live class
               Divider(),
               ListTile(
                 visualDensity: VisualDensity(horizontal:0,vertical: -2),
@@ -161,19 +173,11 @@ class Tab_of_Appbar extends StatelessWidget {
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Gridview()));
                 },
-              ),//list title of live class
-              Divider(),
-              ListTile(
-                visualDensity: VisualDensity(horizontal:0,vertical: -2),
-                title: Text('Live Exam'),
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ClassList()));
-                },
               ),//list title of live exam
               Divider(),
               ListTile(
                 visualDensity: VisualDensity(horizontal:0,vertical: -2),
-                title: Text('Login'),
+                title: Text('LogIn'),
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> AppInput()));
                 },

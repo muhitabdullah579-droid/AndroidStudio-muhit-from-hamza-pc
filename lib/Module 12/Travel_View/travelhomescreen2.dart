@@ -87,20 +87,20 @@ class TravelHomeScreen2 extends StatelessWidget {
 
             SizedBox(height: 10),
             packageCard(
-              "assets/OIP (1).webp",
+              "assets/GettyImages-559699279-58f4f3cb5f9b582c4dfb1b29.jpg",
               "Romantic Paris Trip",
               799,
             ),
 
             SizedBox(height: 20),
             packageCard(
-              "assets/OIP (1).webp",
+              "assets/R.gif",
               "Romantic Maldives Trip",
               799,
             ),
             SizedBox(height: 20),
             packageCard(
-              "assets/OIP (1).webp",
+              "assets/OIP (3).webp",
               "Romantic Dubai Trip",
               799,
             ),

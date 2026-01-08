@@ -15,6 +15,8 @@ import 'Module 12/tab_bar.dart';
 import 'Module 14/res layout.dart';
 import 'Module 14/responsiveness.dart';
 import 'Module 14/usecase_of_list.dart';
+import 'Module 15/calcualtor.dart';
+import 'Module 15/fav_button.dart';
 import 'Module 15/state.dart';
 
 
@@ -48,7 +50,7 @@ class MyTravelApp extends StatelessWidget{
             //
             // ),
             title: 'Finzy Travel Agency',
-            home:  state(),
+            home:  Calculator(),
 
             routes: {
               '/home': (context) => ImageStack(),

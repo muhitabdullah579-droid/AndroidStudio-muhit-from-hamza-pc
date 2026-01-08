@@ -5,6 +5,7 @@ import '../Module 11/gridview_and_navigation.dart';
 import '../Module 11/list.dart';
 import '../Module 11/stack_and_navigation.dart';
 import 'Travel_View/TravelHomeScreen.dart';
+import 'Travel_View/travelhomescreen2.dart';
 
 class BottomNev extends StatefulWidget {
   const BottomNev({super.key});
@@ -16,7 +17,7 @@ class BottomNev extends StatefulWidget {
 class _BottomNevState extends State<BottomNev> {
   int _selectedIndex = 0;
   List pages = [
-    TravelHomeScreen(),
+    TravelHomeScreen2(),
     Gridview(),
     ClassList(),
     Account(),
