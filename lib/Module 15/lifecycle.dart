@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../Module 10/button.dart';
 
 class Life_Cycle extends StatefulWidget {
-  const Life_Cycle({super.key});
+   Life_Cycle({super.key}){
+     //print(object);
+   }
 
   @override
   State<Life_Cycle> createState() => _Life_CycleState();

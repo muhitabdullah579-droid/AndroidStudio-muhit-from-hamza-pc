@@ -6,6 +6,7 @@ import 'package:muhit_flutter/Module 11/list.dart';
 import 'package:muhit_flutter/Module%2011/alert.dart';
 import 'package:muhit_flutter/Module%2011/gridview_and_navigation.dart';
 import 'package:muhit_flutter/Module%2012/Travel_View/TravelHomeScreen.dart';
+import 'package:muhit_flutter/test_train_ticket.dart';
 
 import 'Module 10/image.dart';
 import 'Module 11/stack_and_navigation.dart';
@@ -18,6 +19,7 @@ import 'Module 14/usecase_of_list.dart';
 import 'Module 15/calcualtor.dart';
 import 'Module 15/fav_button.dart';
 import 'Module 15/state.dart';
+import 'Module 16/testing_api.dart';
 
 
 
@@ -50,7 +52,7 @@ class MyTravelApp extends StatelessWidget{
             //
             // ),
             title: 'Finzy Travel Agency',
-            home:  Calculator(),
+            home:  CashMemoPage(),
 
             routes: {
               '/home': (context) => ImageStack(),
