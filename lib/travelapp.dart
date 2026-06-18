@@ -10,16 +10,10 @@ import 'package:muhit_flutter/test_train_ticket.dart';
 
 import 'Module 10/image.dart';
 import 'Module 11/stack_and_navigation.dart';
-import 'Module 12/Travel_View/travelhomescreen2.dart';
 import 'Module 12/navigation.dart';
-import 'Module 12/tab_bar.dart';
-import 'Module 14/res layout.dart';
-import 'Module 14/responsiveness.dart';
-import 'Module 14/usecase_of_list.dart';
-import 'Module 15/calcualtor.dart';
-import 'Module 15/fav_button.dart';
-import 'Module 15/state.dart';
-import 'Module 16/testing_api.dart';
+import 'Module 16/App build with crud/main_ui.dart';
+
+
 
 
 
@@ -52,7 +46,7 @@ class MyTravelApp extends StatelessWidget{
             //
             // ),
             title: 'Finzy Travel Agency',
-            home:  CashMemoPage(),
+            home:  Crud_ui(),
 
             routes: {
               '/home': (context) => ImageStack(),
@@ -67,5 +61,7 @@ class MyTravelApp extends StatelessWidget{
 
   }
 }
+
+
 
 
